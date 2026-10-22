@@ -1,0 +1,31 @@
+def getSum(z):
+    total = 0
+    for a in range(1, z + 1):
+        total += a
+    return total
+
+def calculate(n):
+  
+    return n * (n + 1) // 2 
+
+
+
+z = int(input("Enter a positive number: "))
+
+
+while z <= 0:
+    print("Please enter a positive number.")
+    z = int(input("Enter a positive number: "))
+
+
+y = calculate(z)
+print(f"Expected sum is {y}")
+
+result = getSum(z)
+print(f"After calling the function getSum, the sum of all numbers up to {z} is {result}.")
+
+
+if result == y:
+    print("Output Verified.")
+else:
+    print("Output Not Verified.")
